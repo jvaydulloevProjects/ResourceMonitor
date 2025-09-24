@@ -43,6 +43,23 @@
         "streambuf": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "chrono": "cpp",
+        "format": "cpp",
+        "span": "cpp",
+        "ctime": "cpp",
+        "charconv": "cpp",
+        "ratio": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "istream": "cpp",
+        "mutex": "cpp",
+        "semaphore": "cpp",
+        "sstream": "cpp",
+        "stop_token": "cpp",
+        "thread": "cpp",
+        "variant": "cpp",
+        "iostream": "cpp",
+        "source_location": "cpp"
     }
 }

@@ -3,20 +3,22 @@
 
 #include "TaskQueue.hpp"
 #include <memory>
+#include <iostream>
+#include "interfaces.hpp"
 
 
 template<typename T>
-class Producer
+class Producer: public IProducable<T>
 {
 private:
-    std::shared_ptr<TaskQueue> tasks_;
+    std::shared_ptr<TaskQueue<T>> tasks_;
 
 public:
-    inline Producer(std::shared_ptr<TaskQueue> tasks):tasks_(tasks){};
-    ~Producer()=default;
+    inline Producer(std::shared_ptr<TaskQueue<T>> tasks):tasks_(tasks){};
+    ~Producer(){std::cout<<"Destructor Producer \n";};
 
-    void run(T task);
+    void run(T& task,IEventManager<T>& event) override;
 };
 
+#include "Producer.tpp"
 #endif
-
