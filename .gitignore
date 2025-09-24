@@ -1,5 +1,7 @@
 /logs/
 /build/
+/logs/
 *.exe
 *.obj
 *.o
+*.txt
