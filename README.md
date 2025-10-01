@@ -50,7 +50,14 @@
 | `FileReader<T>` | Reads tasks from file and writes results |
 | `IProducable<T>, IConsumable<T>, IReadable<T>, IWriteable<T>` | Interfaces for abstraction |
 
+
+
+The program will generate an input.txt file with random numbers, process the tasks, log events to the console, and write results to logs/log.txt.
 ---
+
+## 🚀 Installation and Running
+
+1. **Clone the repository**
 
 ## 🚀 Installation and Running
 
@@ -59,11 +66,7 @@
 ```bash
 git clone https://github.com/jvaydulloevProjects/ResourceMonitor.git
 cd ResourceMonitor
-
-2. **Compile the project**
 g++ -std=c++17 src/main.cpp -Iinclude -pthread -o TaskProcessor
-
-3.Run the program
 ./TaskProcessor
 
-The program will generate an input.txt file with random numbers, process the tasks, log events to the console, and write results to logs/log.txt.
+
