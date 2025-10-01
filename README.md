@@ -53,11 +53,6 @@
 
 
 The program will generate an input.txt file with random numbers, process the tasks, log events to the console, and write results to logs/log.txt.
----
-
-## 🚀 Installation and Running
-
-1. **Clone the repository**
 
 ## 🚀 Installation and Running
 
@@ -66,7 +61,24 @@ The program will generate an input.txt file with random numbers, process the tas
 ```bash
 git clone https://github.com/jvaydulloevProjects/ResourceMonitor.git
 cd ResourceMonitor
+```
+2. ** Compile**
+```bash
 g++ -std=c++17 src/main.cpp -Iinclude -pthread -o TaskProcessor
+```
+3. ** Run**
+```bash
 ./TaskProcessor
+```
 
+Sample output
+```
+File generated successfully!
+1 [Logger] Task Added
+2 [Logger] Task Added
+...
+10000 [Logger] Task Processed
+Processing completed in 123 ms!
+
+```
 
